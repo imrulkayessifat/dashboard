@@ -7,7 +7,6 @@
     import { Vector as VectorLayer } from "ol/layer";
     import { Vector as VectorSource } from "ol/source";
     import { Style, Fill, Stroke } from "ol/style";
-
     function getGeoJSONStyle() {
         return new Style({
             fill: new Fill({
@@ -23,14 +22,13 @@
     let map;
 
     onMount(() => {
-
         map = new Map({
             target: "map",
             layers: [
                 new VectorLayer({
                     source: new VectorSource({
                         format: new GeoJSON(),
-                        url: "https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson",
+                        url: 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson',
                     }),
                     style: getGeoJSONStyle(),
                 }),
