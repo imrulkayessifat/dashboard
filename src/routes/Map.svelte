@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import Loading from "./Loading.svelte";
     import "ol/ol.css";
     import Map from "ol/Map";
     import View from "ol/View";
@@ -47,7 +48,7 @@
     <p>Map is available.</p>
 {:else}
     <!-- Render HTML when map is not available -->
-    <p>Loading map...</p>
+    <Loading />
 {/if}
 
 <style>
