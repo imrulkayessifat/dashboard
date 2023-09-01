@@ -20,7 +20,6 @@
     }
 
     let map;
-
     onMount(() => {
         map = new Map({
             target: "map",
@@ -28,7 +27,7 @@
                 new VectorLayer({
                     source: new VectorSource({
                         format: new GeoJSON(),
-                        url: 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson',
+                        url: "https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson",
                     }),
                     style: getGeoJSONStyle(),
                 }),
@@ -41,7 +40,14 @@
     });
 </script>
 
-<div id="map" class="w-full h-screen" />
+<div id="map" bind:this={map} class="w-full h-screen" />
+{#if map}
+    <!-- Render HTML when map is available -->
+    <p>Map is available.</p>
+{:else}
+    <!-- Render HTML when map is not available -->
+    <p>Loading map...</p>
+{/if}
 
 <style>
 </style>
