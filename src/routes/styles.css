@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#mountain {
+    position: relative;
+    overflow: hidden;
+    transform: rotate(45deg);
+}
+
+#mountain:before,
+#mountain:after{
+    content: '';
+    position: absolute;
+    background: #FE5F55;
+}
+
+#mountain:before {
+    width: 30px;
+    height: 20px;
+    right: calc(50% - 12px);
+    bottom: 0px;
+}
+
+#mountain:after {
+    width: 60%;
+    height: 100%;
+    left: 50%;
+    top: 30px;
+}
