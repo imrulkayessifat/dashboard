@@ -63,7 +63,8 @@
     });
 </script>
 
-<div class="h-screen row-span-3 md:col-span-3  grid grid-rows-6 border-2 rounded-md bg-white  m-2">
-    <div class="row-span-1 p-2">Countries</div>
-    <canvas class="p-2 row-span-5" id="polar-area-chart" />
+<div class="h-screen row-span-3 md:col-span-3 relative  grid grid-rows-6 border-2 rounded-md bg-white  m-2">
+    <div class="p-2 h-8 w-full border-b-2 absolute">Countries</div>
+    <br />
+    <canvas class="row-span-6 top-8 absolute" id="polar-area-chart" />
 </div>
