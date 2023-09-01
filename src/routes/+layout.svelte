@@ -1,35 +1,28 @@
 <script>
-	import "./styles.css";
+	import { onMount } from "svelte";
+	import Makeup from "./Makeup.svelte";
+	import Table from "./Table.svelte";
+	let currentRoute = "";
+
+	onMount(() => {
+		// You can set the initial route here based on the URL or any other logic
+		currentRoute = window.location.pathname;
+	});
 </script>
 
 <div class="app">
-	<div class="w-screen h-screen grid grid-cols-1 md:grid-cols-2">
-		<div class="grid grid-rows-4 lg:grid-rows-6">
-			<div class=" grid lg:grid-cols-6 row-span-3 lg:row-span-5">
-				<div class=" grid lg:grid-rows-4 lg:col-span-2">
-					<div class="bg-blue-400 lg:row-span-2">1</div>
-					<div class="bg-teal-400 lg:row-span-2">2</div>
-				</div>
-				<div class="bg-rose-400 lg:col-span-4">3</div>
-			</div>
-			<div class="bg-fuchsia-400 row-span-1 lg:row-span-1">4</div>
+	<nav>
+		<div class="fixed top-2  right-11 z-[99]">
+			<button class="flex h-12 w-16 cursor-pointer items-center justify-center rounded-sm bg-rose-400 text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp" on:click={() => (currentRoute = "/layout")}>Layout</button>
 		</div>
-		<div class="grid grid-rows-3 lg:grid-rows-6">
-			<div class="bg-blue-400 row-span-1 lg:row-span-2">5</div>
-			<div
-				class="grid grid-cols-1 md:grid-cols-2 row-span-2 lg:row-span-4"
-			>
-				<div class="flex items-center justify-center bg-yellow-100">
-					<div
-						class="flex items-center justify-center w-40 h-40 bg-slate-900"
-					>
-						<div id="mountain" class="rounded-full  w-28 h-28 bg-yellow-100">
-							<!-- <div class="absolute bg-rose-600 w-8 h-8 top-8"></div> -->
-						</div>
-					</div>
-				</div>
-				<div class="bg-emerald-400">7</div>
-			</div>
+		<div class="fixed top-16  right-11 z-[99]">
+			<button class="flex h-12 w-16 cursor-pointer items-center justify-center rounded-sm bg-orange-400 text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp" on:click={() => (currentRoute = "/chart")}>Chart</button>
 		</div>
-	</div>
+	</nav>
+
+	{#if currentRoute === "/layout"}
+		<Makeup />
+	{:else if currentRoute === "/chart"}
+		<Table />
+	{/if}
 </div>
