@@ -20,6 +20,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"ol": "^8.0.0",
 		"svelte-routing": "^2.1.0"
 	}
 }
