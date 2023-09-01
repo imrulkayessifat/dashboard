@@ -29,7 +29,6 @@
     onMount(() => {
         fetchAndPopulateCountryData1();
         countryDataStore1.subscribe(updateChart);
-        // console.log(sortedCountries);
         const ctx = document
             .getElementById("polar-area-chart")
             .getContext("2d");

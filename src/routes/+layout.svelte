@@ -6,7 +6,6 @@
 	let currentRoute = "";
 
 	onMount(() => {
-		// You can set the initial route here based on the URL or any other logic
 		currentRoute = window.location.pathname;
 	});
 </script>
