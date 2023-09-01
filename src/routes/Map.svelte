@@ -19,7 +19,7 @@
         });
     }
 
-    let map;
+    let map=undefined;
     onMount(() => {
         map = new Map({
             target: "map",
@@ -37,11 +37,12 @@
                 zoom: 2,
             }),
         });
+        console.log(typeof map)
     });
 </script>
 
 <div id="map" bind:this={map} class="w-full h-screen" />
-{#if map}
+{#if typeof(map) === "object"}
     <!-- Render HTML when map is available -->
     <p>Map is available.</p>
 {:else}
