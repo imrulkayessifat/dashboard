@@ -35,9 +35,9 @@
 </script>
 
 <div
-    class="overflow-x-auto row-span-3 lg:col-span-3 border-2 rounded-md bg-white m-2"
+    class="row-span-3 grid grid-rows-6 lg:col-span-3 border-2 rounded-md bg-white m-2"
 >
-    <table class="table">
+    <table class="table row-span-5">
         <thead>
             <tr>
                 <th
@@ -119,7 +119,7 @@
             {/each}
         </tbody>
     </table>
-    <nav class="flex justify-center items-center gap-8">
+    <nav class="flex  row-span-1 justify-center items-center gap-8">
         <button
             type="button"
             class="btn-next-prev m-8 w-8 h-8"
