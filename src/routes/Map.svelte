@@ -8,6 +8,9 @@
     import { Vector as VectorLayer } from "ol/layer";
     import { Vector as VectorSource } from "ol/source";
     import { Style, Fill, Stroke } from "ol/style";
+    import OSM from "ol/source/OSM.js";
+    import TileLayer from "ol/layer/Tile.js";
+    
     function getGeoJSONStyle() {
         return new Style({
             fill: new Fill({
@@ -20,11 +23,14 @@
         });
     }
 
-    let map=undefined;
+    let map;
     onMount(() => {
         map = new Map({
             target: "map",
             layers: [
+                new TileLayer({
+                    source: new OSM(),
+                }),
                 new VectorLayer({
                     source: new VectorSource({
                         format: new GeoJSON(),
@@ -38,18 +44,10 @@
                 zoom: 2,
             }),
         });
-        console.log(typeof map)
     });
 </script>
 
-<div id="map" bind:this={map} class="w-full h-screen" />
-{#if typeof(map) === "object"}
-    <!-- Render HTML when map is available -->
-    <p>Map is available.</p>
-{:else}
-    <!-- Render HTML when map is not available -->
-    <Loading />
-{/if}
+<div id="map" class="w-full h-screen" />
 
 <style>
 </style>

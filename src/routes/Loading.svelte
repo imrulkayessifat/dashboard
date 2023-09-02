@@ -1,13 +1,12 @@
 <script>
     import { onMount } from "svelte";
-
+    import data from './loading.json'
     let LottiePlayer;
 
     onMount(async () => {
         const module = await import("@lottiefiles/svelte-lottie-player");
         LottiePlayer = module.LottiePlayer;
     });
-
     let controlsLayout = [
         "previousFrame",
         "playpause",
@@ -27,7 +26,7 @@
 <div class="w-full h-screen flex items-center justify-center">
     {#if LottiePlayer}
         <LottiePlayer
-            src="https://lottie.host/25d804b4-f40e-44ba-ae82-29c7ceb228b7/ya9XmxqFqX.json"
+            src={data}
             autoplay={true}
             loop={true}
             controls={false}
@@ -39,3 +38,4 @@
         />
     {/if}
 </div>
+<!-- url="https://lottie.host/25d804b4-f40e-44ba-ae82-29c7ceb228b7/ya9XmxqFqX.json" -->
