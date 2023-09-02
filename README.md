@@ -1,29 +1,9 @@
-# create-svelte
-
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## To run this project 
+1. git clone https://github.com/imrulkayessifat/dashboard.git
+2. cd dashboard
+3. npm i
+4. npm run dev
+5. in browser type :   localhost:5132
 
 ## Building
 
@@ -32,7 +12,26 @@ To create a production version of your app:
 ```bash
 npm run build
 ```
+## Website 
+https://dashboard-seven-lime.vercel.app/
 
-You can preview the production build with `npm run preview`.
+## Details
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+**Github** : https://github.com/imrulkayessifat/dashboard
+
+**Deploy** : https://dashboard-seven-lime.vercel.app/
+
+**Frontend** : Svelte,Tailwind CSS,lottiefiles,charjs
+
+**All features from the task are included. Design with full responsive**
+
+**Home Page** : ![Screenshot from 2023-09-02 10-20-46](https://github.com/imrulkayessifat/dashboard/assets/41978816/cdfc34be-143c-4a82-87fa-c35985164861)
+
+**Layout Page** :![Screenshot from 2023-09-02 10-22-11](https://github.com/imrulkayessifat/dashboard/assets/41978816/b2616836-ce89-4748-b35f-80483b553d5d)
+
+**Chart Page** : ![Screenshot from 2023-09-02 10-23-07](https://github.com/imrulkayessifat/dashboard/assets/41978816/548635f0-7e06-4a69-923e-0a2c53e7d302)
+
+**Map Page** : ![Screenshot from 2023-09-02 10-24-03](https://github.com/imrulkayessifat/dashboard/assets/41978816/db7a66cd-5837-448b-a83d-3a097fd2c39a)
+
+**final map** : ![Screenshot from 2023-09-02 10-25-15](https://github.com/imrulkayessifat/dashboard/assets/41978816/a150e54b-f6d3-4575-9b00-85662dd0e347)
+
