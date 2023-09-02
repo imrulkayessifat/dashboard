@@ -23,6 +23,7 @@
 		"@lottiefiles/svelte-lottie-player": "^0.3.0",
 		"eslint": "^8.48.0",
 		"ol": "^8.0.0",
+		"svelte-icons": "^2.1.0",
 		"svelte-lottie": "^0.0.0",
 		"svelte-preprocess": "^5.0.4",
 		"svelte-routing": "^2.1.0"

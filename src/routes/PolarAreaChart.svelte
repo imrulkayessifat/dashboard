@@ -40,9 +40,11 @@
                     {
                         data: sortedCountries.map((country) => country.data),
                         backgroundColor: [
-                            "rgb(100 116 139)",
-                            "rgb(209 213 219)",
-                            "rgb(228 228 231)",
+                            "rgb(248 113 113)",
+                            "rgb(249 115 22)",
+                            "rgb(245 158 11)",
+                            "rgb(132 204 22)",
+                            "rgb(14 165 233)"
                         ],
                     },
                 ],
@@ -63,8 +65,17 @@
     });
 </script>
 
-<div class="h-screen row-span-3 md:col-span-3 relative  grid grid-rows-6 border-2 rounded-md bg-white  m-2">
+<div class="overflow-x-auto row-span-3 lg:col-span-3 border-2 rounded-md bg-white m-2">
     <div class="p-2 h-8 w-full border-b-2 absolute">Countries</div>
-    <br />
-    <canvas class="row-span-6 top-8 absolute" id="polar-area-chart" />
+    <div class="flex justify-center items-center">
+        <canvas  class="row-span-6 " id="polar-area-chart" />
+    </div>
 </div>
+
+<style>
+    #polar-area-chart {
+        width: 450px !important;
+        height: 450px !important;
+        top:20px !important;
+    }
+</style>

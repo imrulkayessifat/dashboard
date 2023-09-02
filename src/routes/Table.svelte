@@ -3,7 +3,7 @@
     import PolarAreaChart from "./PolarAreaChart.svelte";
 </script>
 
-<div class="w-screen h-screen grid grid-rows-7 gap-2 md:grid-cols-7">
+<div class="w-full h-full grid grid-rows-6 gap-2 lg:grid-cols-6">
     <CountryTable />
     <PolarAreaChart />
 </div>
