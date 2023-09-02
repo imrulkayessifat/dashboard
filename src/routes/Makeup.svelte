@@ -15,7 +15,7 @@
         <div class="bg-fuchsia-400 row-span-1 lg:row-span-1">4</div>
     </div>
     <div class="grid grid-rows-3 lg:grid-rows-6">
-        <div class="bg-blue-400 row-span-1 lg:row-span-2">5</div>
+        <div class="bg-amber-300 row-span-1 lg:row-span-2">5</div>
         <div class="grid grid-cols-1 md:grid-cols-2 row-span-2 lg:row-span-4">
             <div class="flex items-center justify-center bg-yellow-100">
                 <div
