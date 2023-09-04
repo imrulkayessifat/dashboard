@@ -128,7 +128,7 @@
             {/each}
         </tbody>
     </table>
-    <nav class="flex row-span-1 justify-center items-center gap-8">
+    <nav class="flex row-span-1 justify-center  gap-8">
         <button
             type="button"
             class="btn-next-prev m-8 w-8 h-8"
