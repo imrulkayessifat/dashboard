@@ -619,7 +619,7 @@
         on:particlesLoaded={onParticlesLoaded}
         {particlesInit}
     />
-<div class="w-full h-full grid grid-rows-6 gap-2 lg:grid-cols-6">
+<div class="w-full h-full grid grid-rows-6 gap-2 lg:grid-cols-12">
     <CountryTable />
     <PolarAreaChart />
 </div>

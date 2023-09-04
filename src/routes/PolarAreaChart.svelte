@@ -65,7 +65,7 @@
     });
 </script>
 
-<div id="chart" class="overflow-x-auto relative row-span-3 lg:col-span-3 border-2 rounded-md bg-white m-2">
+<div id="chart" class="overflow-x-auto relative row-span-3 lg:col-span-5 border-2 rounded-md bg-white m-2">
     <div class="p-2 w-full h-8 border-b-2 absolute">Countries</div>
     <div class="flex h-screen justify-center items-center">
         <canvas  class="row-span-6 " id="polar-area-chart" />

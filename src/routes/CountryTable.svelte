@@ -41,7 +41,7 @@
 
 <div
     id="countyTable"
-    class=" overflow-x-auto row-span-3 grid grid-rows-6 lg:col-span-3 border-2 rounded-md bg-white m-2"
+    class=" overflow-x-auto row-span-3 grid grid-rows-6 lg:col-span-7 border-2 rounded-md bg-white m-2"
 >
     <table class="table row-span-5">
         <thead>
