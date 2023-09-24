@@ -17,7 +17,7 @@
     <div class="grid grid-rows-3 lg:grid-rows-6">
         <div class="bg-amber-300 row-span-1 lg:row-span-2">5</div>
         <div class="grid grid-cols-1 md:grid-cols-2 row-span-2 lg:row-span-4">
-            <div class="flex items-center justify-center bg-yellow-100">
+            <div class="flex items-center justify-center">
                 <div
                     class="flex items-center justify-center w-40 h-40 bg-slate-900"
                 >

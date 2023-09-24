@@ -19,7 +19,7 @@
             const start = index * itemsPerPage;
             return items.slice(start, start + itemsPerPage);
         });
-
+        console.log(paginatedItems)
         totalPages = [...paginatedItems];
     };
 
